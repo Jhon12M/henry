@@ -1,15 +1,14 @@
-var nombreMatriz = ['Lea', 'Jhon', 'Lucas', 'Maria'];
+const numeros = [1, 2, 3];
 
-function devolverNombre(nombre) {
-  for (let i = 0; i < nombreMatriz.length; i++) {
-    if (nombre === nombreMatriz[i]){
-      return nombreMatriz[i];
-    }else 
-      return false;  
+function devolverNumero(numeros){
+  var suma = 1;
+
+  for (let i = 0; i < numeros.length; i++){
+    numeros[i] = numeros[i] + suma;
   }
-}
+  return numeros;
+} 
+        
+console.log(devolverNumero(numeros));
 
-console.log(devolverNombre('Lea'));
-console.log(devolverNombre('Jhon'));
-console.log(devolverNombre('jhon'));
-console.log(devolverNombre('Tostada'));
+
